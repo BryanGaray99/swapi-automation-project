@@ -56,9 +56,11 @@ This repository contains Java tests using RestAssured to interact with the Star 
         - `firstPlanetPrevResTest`: Executes the test for the first planet, checking gravity and terrains.
         - `urlPrevResponsePlanetTest`: Executes the test for the URL element from the planet's response, validating it matches the previous response.
 
-## How to Run Tests
-
-Ensure you have the necessary dependencies and configurations set up for your test environment. Run the individual test classes based on the specific scenario you want to test. Or run all the test cases with the suite.xml
+## How to Install and Run the Tests
+1. Clone the project: https://github.com/BryanGaray99/swapi-automation-project
+2. Install the dependencies  in a terminal inside the project with: mvn -B -DskipTests clean package
+3. For suite.xml to run correctly, in "Edit Configurations", set in VM Options: -Durl="https://swapi.dev/api"
+4. Run the individual test classes based on the specific scenario you want to test. Or run all the test cases with the suite.xml
 
 Feel free to customize or extend the tests as needed for your use case.
 
